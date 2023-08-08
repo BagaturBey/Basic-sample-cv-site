@@ -1,0 +1,134 @@
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+
+h1 {
+    color: #F19031;
+}
+li {
+    color: #e2c256;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(headerbg.jpg);
+    color: #fff;
+    padding: 1em;
+}
+  
+.profile-img {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 200px;
+    height: 170.12px; /* width * 0.866 */
+    box-sizing: border-box;
+    -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    background-image: url(pp.JPG);
+    background-size: cover;
+    background-position: center;
+}
+  
+.header-content {
+    flex: 1;
+    text-align: right;
+    padding-right: 1em;
+}
+  
+.navbar {
+    background-color: #060606;
+    color: #fff;
+    text-align: center;
+}
+  
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.navbar ul li {
+    display: inline;
+    margin: 0 1em;
+}
+  
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+  
+.navbar ul li a:hover {
+    color: #e9b50d;
+}
+
+.left {
+    width: 50%;
+    position: relative;
+    margin: auto;
+    text-align:left;
+    font-weight: bold;
+    margin-bottom:5%;
+}
+
+.right {
+    width: 50%;
+    position: relative;
+    margin: auto;
+    text-align:right;
+    font-weight: bold;
+    margin-bottom:5%;
+}
+  
+/* Medya Sorguları */
+@media (max-width: 1024px) {
+.header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1em;
+}
+  
+.profile-img {
+    margin-bottom: 1em;
+}
+  
+.header-content {
+    text-align: center;
+    padding: 0;
+}
+
+.left {
+    width: 80%;
+    position: relative;
+    margin: auto;
+    text-align:left;
+    border-radius: 5%;
+    font-weight: bold;
+    margin-bottom:10%;
+}
+
+.right {
+    width: 80%;
+    position: relative;
+    margin: auto;
+    text-align:right;
+    border-radius: 5%;
+    font-weight: bold;
+    margin-bottom:10%;
+}
+
+/* Diğer medya sorgusu kuralları buraya eklenebilir */
+}
+  
